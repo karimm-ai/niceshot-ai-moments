@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch VOD</title>
+
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #twitch-player {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div id="twitch-player"></div>
+
+<script>
+new Twitch.Player("twitch-player", {
+    width: "100%",
+    height: "100%",
+    video: "2818465549",
+    autoplay: false,
+    parent: ["karimm-ai.github.io"]
+});
+</script>
+
+</body>
+</html>
